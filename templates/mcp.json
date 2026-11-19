@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "dart-mcp-server": {
+      "command": "dart",
+      "args": [
+        "mcp-server"
+      ]
+    },
+    "marionette_mcp": {
+      "command": "marionette_mcp",
+      "args": []
+    },
+    "graphify": {
+      "command": "graphify-mcp",
+      "args": [
+        "--graph",
+        ".graphify_ast.json"
+      ]
+    },
+    "evolvemem-memory": {
+      "command": "python3",
+      "args": [
+        "tools/evolvemem_mcp/server.py",
+        "--db",
+        "~/.evolvemem/memories.sqlite3"
+      ]
+    }
+  }
+}
